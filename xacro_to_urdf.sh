@@ -2,7 +2,12 @@
 
 "2. Run the following command in a terminal (make sure to source ros2 before running) to turn it into an urdf"
 
-ros2 run xacro xacro /root/dev_ws/src/xarm_ros2/xarm_description/urdf/xarm_device.urdf.xacro \
+ros2 run xacro xacro /xarm_ros2/xarm_description/urdf/xarm_device.urdf.xacro \
   dof:=5 add_gripper:=true \
   -o /root/xarm5_gripper.urdf
 
+"3. Fix the mesh paths."
+
+sed -i 's|package://xarm_description|package://xarmros2/xarm_description|g' ~/xarm5_gripper.urdf
+
+"4.
