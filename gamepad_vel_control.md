@@ -28,15 +28,28 @@ The "On Playback Tick" node allows the "Articulation Controller" to execute its 
 **3. Adding the required nodes for control via the gamepad**
 Isaac Sim has already set up most of the nodes. All we need is to create values for the velocities of the joints.
 
+| Setting up joint1 |
 Add the _Read Gamepad State_, _To Double_, _Constant Double_ and _Multiply_ nodes to the graph.
 Then, connect them together like this:
 <img width="1362" height="543" alt="Screenshot from 2026-07-03 11-01-47" src="https://github.com/user-attachments/assets/b5340701-db88-4498-92d4-a68460cb0e63" />
 
--_Read Gamepad State_ reads the gamepad's inputs. Click on the node and set the "Element" to the button you want it to receive values from. This node will output a float.
+-_Read Gamepad State_ reads the gamepad's inputs. Click on the node and set the "Element" to the button you want it to receive values from. Let's select "Left Stick X Axis". This node will output a float when you move the left joystick on the X Axis.
 
--_To Double_ turns the gamepad input, a float, into a double. This is so that we can put the value inside the array which only allows for doubles.
+-_To Double_ turns the gamepad input, a float, into a double. This is so that we can put the vDouble-precision floating-point formatalue inside the array which only allows for doubles.
 
 -_Multiply_ multiplies two values together. Here we are multiplying the received input (A) of the gamepad with a constant (B) from the _Constant Double_ node to create the final velocity value that is executed by the joint.
 
 -_Constant Double_ allows us to set a constant (double) to multiply our controller value with. Click on the node and set the "Value" to a number like 10000 (you can change this value as you see fit through trial and error).
 
+We connect the "Product" of _Multiply_ to "Input0", which is the velocity for joint1.
+
+Let's try it out. Make sure to have your gamepad connected to the PC and run the simulation. Try moving the left joystick left and right - it should move the XARM5 accordingly. If it moves too slowly/fast, change the _Constant Double_ value to your liking.
+
+| Setting up the other joints |
+Perfect! Now we just have to set up the controls for the other five joints. It is the exact same process.
+To make this easier, you can Shift+LeftCLick on the _Read Gamepad State_, _To Double_, _Constant Double_ and _Multiply_ nodes and copy. Then, you have to right click on the backdrop of the graph and click on Paste (you cannot Ctrl+V to paste for some reason). 
+The wiring setup is the same as before, but this time connect the "Product" to "Input1", which is our joint2. Additionally, change the "Element" of _Read Gamepad State_ to another button on the controller, like Right Stick Y axis for example.
+
+Now when you run the simulation, you should be able to control both joint1 and joint2's velocities with the controller. You can change the constant accordingly. 
+
+The process for the other joints is the same.
