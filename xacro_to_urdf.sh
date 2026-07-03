@@ -19,8 +19,7 @@ If Isaac crashes the moment you click on the file, this means that the xacro was
 
 If the app does not crash, select Create in Stage and then Import (I am not certain about the Joint Configuration, this will require more testing to find out the best values).
 
-If there is no robot on the scene, this means that the path to the meshes was not correctly set up in the xarm5_gripper.urdf file. Modify the command at 3. to redirect it to the actual location of the meshes."
-
+If there is no robot on the scene, this means that the path to the meshes was not correctly set up in the xarm5_gripper.urdf file. Modify the command of step 3. to redirect it to the actual location of the meshes."
 
 
 "Once you see the robot on the scene, you're done!"
