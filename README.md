@@ -7,6 +7,6 @@ This repository is documentation for the setup of the UFACTORY xArm5 robotic arm
 
 **1. Controlling the Arm With a Game Controller** (see gamepad_vel_control.md)
 
-**2. ROS2**
+**2. ROS2 integration** (see ros2_joint_states.md)
 
 **3. Pick and Place Reinforcement Learning with Isaac Lab**
