@@ -5,8 +5,8 @@ This repository is documentation for the setup of the UFACTORY xArm5 robotic arm
 
 -There will be instructions on how to setup various configurations inside the Isaac Sim environment such as:
 
-**1. Controlling the Arm With a Game Controller** (see gamepad_vel_control.md)
+**1. Controlling the Arm With a Game Controller** (gamepad_vel_control.md)
 
-**2. ROS2 integration** (see ros2_joint_states.md)
+**2. ROS2 integration** (ros2_joint_states.md)
 
 **3. Pick and Place Reinforcement Learning with Isaac Lab**
