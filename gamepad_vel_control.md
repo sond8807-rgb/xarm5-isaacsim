@@ -28,7 +28,7 @@ The "On Playback Tick" node allows the "Articulation Controller" to execute its 
 **3. Adding the required nodes for control via the gamepad**
 Isaac Sim has already set up most of the nodes. All we need is to create values for the velocities of the joints.
 
-| Setting up joint1 |
+| Setting up joint1 |  
 Add the _Read Gamepad State_, _To Double_, _Constant Double_ and _Multiply_ nodes to the graph.
 Then, connect them together like this:
 <img width="1362" height="543" alt="Screenshot from 2026-07-03 11-01-47" src="https://github.com/user-attachments/assets/b5340701-db88-4498-92d4-a68460cb0e63" />
