@@ -26,4 +26,7 @@ You can also run the following in the terminal:
 You should see /joint_command and /joint_states if ROS2 is working.
 
 5. **Moving the Robot with Position Commands**
-
+Install xarm5_commander.py from the repo. Make sure the simulation is running. Go to the location of the file, then run the following command in your terminal:  
+**python3 xarm5_commander.py**  
+You should see the xarm5 move.  
+If it does, ROS2 has been set up succesfully!
