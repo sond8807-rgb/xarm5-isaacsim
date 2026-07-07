@@ -10,4 +10,12 @@ Documentation for the setup of the UFACTORY xArm5 robotic arm in Isaac Sim.
 
 **2. ROS2 integration** (ros2_joint_states.md)
 
-**3. Pick and Place Reinforcement Learning with Isaac Lab**
+**3. ROS2 Object detection with YOLO (v8)**
+Enter the following in a terminal to launch yolo (set the subcriber topic as /rgb):
+ros2 launch yolo_bringup yolo.launch.py input_image_topic:=/rgb
+
+
+
+
+
+**Eventually. Pick and Place Reinforcement Learning with Isaac Lab**
