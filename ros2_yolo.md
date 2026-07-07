@@ -32,6 +32,14 @@ If you see "/rgb" and "/depth" then the action graph has been set up correctly!
 
    rqt
 
-From the topic list, choose /rgb or /depth. You should see a colored video feed or a black and white video feed respectively.
+From the topic list, choose /rgb or /depth. You should see a colored video feed or a black and white video feed respectively. 
 
-8. Now, let's set up YOLO. 
+8. Now, launch yolo_ros:
+
+ ros2 launch yolo_bringup yolo.launch.py input_image_topic:=/rgb
+
+ "input_image_topic:=/rgb" forces yolo to use the "/rgb" topic as its image input.
+
+ 9. In rqt, click on the topic /yolo/dbg_image to see YOLO in effect.
+
+     
