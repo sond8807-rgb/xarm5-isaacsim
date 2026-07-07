@@ -43,6 +43,6 @@ From the topic list, choose /rgb or /depth. You should see a colored video feed 
 
  "input_image_topic:=/rgb" forces yolo to use the "/rgb" topic as its image input.
 
-2. In rqt, click on the topic /yolo/dbg_image to see YOLO in effect.
+2. Run Isaac sim and open rqt. In rqt, click on the topic /yolo/dbg_image to see YOLO in effect.
 
      
