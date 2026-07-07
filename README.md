@@ -15,6 +15,7 @@ Enter the following in a terminal to launch yolo (set the subcriber topic as /rg
 ros2 launch yolo_bringup yolo.launch.py input_image_topic:=/rgb
 
 Enter the yolo_ros venv:
+
 source venvs/yolo_ros/bin/activate
 
 
