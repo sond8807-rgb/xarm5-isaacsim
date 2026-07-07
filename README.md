@@ -14,6 +14,8 @@ Documentation for the setup of the UFACTORY xArm5 robotic arm in Isaac Sim.
 Enter the following in a terminal to launch yolo (set the subcriber topic as /rgb):  
 ros2 launch yolo_bringup yolo.launch.py input_image_topic:=/rgb
 
+Enter the yolo_ros venv:
+source venvs/yolo_ros/bin/activate
 
 
 
