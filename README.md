@@ -22,7 +22,7 @@ To launch default yolo:
 ros2 launch yolo_bringup yolo.launch.py input_image_topic:=/rgb
 
 
-To launch yolo with 3D depth:
+To launch yolov12 with 3D depth:
 
 ros2 launch yolo_bringup yolov12.launch.py input_image_topic:=/rgb input_depth_topic:=/depth input_depth_info_topic:=/camera_info use_3d:=True target_frame:=UF_ROBOT
 
