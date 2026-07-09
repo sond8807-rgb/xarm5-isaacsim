@@ -41,7 +41,7 @@ From the topic list, choose /rgb or /depth. You should see a colored video feed 
     ros2 launch yolo_bringup yolo.launch.py input_image_topic:=/rgb
  
 
- "input_image_topic:=/rgb" forces yolo to use the "/rgb" topic as its image input.
+ "input_image_topic:=/rgb" forces yolo to use the "/rgb" topic as its image input, which is the topic created by the Action Graph.
 
 2. Run Isaac sim and open rqt. In rqt, click on the topic /yolo/dbg_image to see YOLO in effect.
 
