@@ -1,10 +1,10 @@
 # xarm5-isaacsim
 Documentation for the setup of the UFACTORY xArm5 robotic arm in Isaac Sim.  
 
--To import the xarm5 into Isaac, see xacro_to_urdf.sh
+_-To import the xarm5 into Isaac, see xacro_to_urdf.sh_
 
 
--There will be instructions on how to setup various configurations inside the Isaac Sim environment such as:
+-There will be instructions on how to setup various configurations within the Isaac Sim environment such as:
 
 **1. Controlling the Arm With a Game Controller** (gamepad_vel_control.md)
 
