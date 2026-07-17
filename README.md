@@ -10,6 +10,12 @@ There will be instructions on how to setup various configurations within the Isa
 
 **2. ROS2 integration** (ros2_joint_states.md)
 
+Source with:
+
+source /opt/ros/jazzy/setup.bash
+
+
+
 **3. ROS2 Object detection with YOLO (v8)**
 
 Enter the yolo_ros venv:
