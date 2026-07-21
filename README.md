@@ -1,45 +1,42 @@
 # xarm5-isaacsim
-Documentation for the setup of the UFACTORY xArm5 robotic arm in Isaac Sim version 5.1.0.  
+Documentation for the setup of the UFACTORY xArm5 robotic arm (or any other robot) in Isaac Sim version 5.1.0. Also includes instructions for setting up Isaac Lab.  
 
-_To import the xarm5 into Isaac, see xacro_to_urdf.sh_
+_To import the xarm5 into Isaac, see https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/xacro_to_urdf.sh_
 
+# Gamepad Control of XARM5 
+See https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/gamepad_vel_control.md for instructions.
 
-There will be instructions on how to setup various configurations within the Isaac Sim environment such as:
+# ROS2-IsaacSim Joint Control 
+See https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/ros2_joint_states.md for instructions.
 
-**1. Controlling the Arm With a Game Controller** (https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/gamepad_vel_control.md)
-
-**2. ROS2 integration** (https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/ros2_joint_states.md)
-
-Source with:
-
+**New terminal session setup**:
+```
 source /opt/ros/jazzy/setup.bash
+```
 
 
+# ROS2-YOLO
+See https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/ros2_yolo.md for instructions.
 
-**3. ROS2 Object detection with YOLO** (https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/ros2_yolo.md)
-
-Enter the yolo_ros venv:
-
+**New terminal session setup**
+1. Enter the yolo_ros venv:
+```
 source venvs/yolo_ros/bin/activate
+```
 
-
-To launch default yolo:  
-
+2. Launch yolo:  
+```
+#Yolo with only object detection (defaults to yolo_v8)
 ros2 launch yolo_bringup yolo.launch.py input_image_topic:=/rgb
 
-
-To launch yolov12 with 3D depth:
-
+#Launch yolo_v12 with 3D depth:
 ros2 launch yolo_bringup yolov12.launch.py input_image_topic:=/rgb input_depth_topic:=/depth input_depth_info_topic:=/camera_info use_3d:=True target_frame:=UF_ROBOT
+```
+(curobo new terminal setup:
 
-( **4. cuROBO**
 Go into /home/curobo/ and
 
 source .venv/bin/activate
 
 to activate the virtual environment for curobo. )
 
-
-
-
-**Eventually, Pick and Place Reinforcement Learning with Isaac Lab**
