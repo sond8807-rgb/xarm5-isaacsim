@@ -16,7 +16,7 @@ source /opt/ros/jazzy/setup.bash
 
 
 
-**3. ROS2 Object detection with YOLO (v8)**
+**3. ROS2 Object detection with YOLO**
 
 Enter the yolo_ros venv:
 
