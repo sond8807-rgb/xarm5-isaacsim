@@ -18,11 +18,15 @@ Make sure that the Target Prim of the _Articulation Controller_ and _ROS2 Publis
 
 4. **Verify ROS2 is Working**  
 Run the simulation. After, in a terminal, source ROS2 and echo the joint positions:  
-**source /opt/ros/jazzy/setup.bash**  
-**ros2 topic echo /joint_states**  
+```
+source /opt/ros/jazzy/setup.bash  
+ros2 topic echo /joint_states
+```  
 You should see the positions of joints 1 to 5.  
 You can also run the following in the terminal:  
-**ros2 topic list**  
+```
+ros2 topic list
+```  
 You should see /joint_command and /joint_states if ROS2 is working.
 
 5. **Moving the Robot with Position Commands**
