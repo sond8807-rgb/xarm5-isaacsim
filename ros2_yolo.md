@@ -1,6 +1,6 @@
 Instructions regarding the setup of the YOLOv8 object detection model by Ultralytics for the Intel Realsense D455 (or any camera) in Isaac Sim.
 
-# yolo_ros AND YOLO v8 INSTALLATION
+# yolo_ros and YOLO v8 Installation
 
 1. Install yolo_ros from the following repo by following the installation instructions: https://github.com/mgonzs13/yolo_ros/tree/main
 
@@ -34,7 +34,7 @@ rqt
 ```
 Then, ppen the Image Viewer plugin. From the topic list, choose /rgb or /depth. You should see a colored video feed or a black and white video feed respectively. 
 
-# Yolo setup 
+# yolo_ros Setup 
 
 1. Now, launch yolo_ros
 ```
@@ -51,7 +51,7 @@ The object detection should look like this (I added a couple meshes to the scene
 
 _Note that Isaac Sim may drop in FPS from publishing camera data to ROS2. You can lower the workload by changing the output image's resolution within the RenderProduct node. I set mine to 640x480._
 
-# Yolo-rviz setup 
+# Yolo-rviz Setup 
 
 To see visualizations in 3D, rqt will not be enough. We will need to use rviz2.
 Before that, we have to set up the TF Publisher inside of Isaac Sim. We'll be using another ROS2 Omnigraph preset.
