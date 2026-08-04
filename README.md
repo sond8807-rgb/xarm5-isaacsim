@@ -40,6 +40,13 @@ See https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/isaaclab_setup.md f
 conda activate env_isaaclab
 ```
 
+# Isaac-Openpi Setup
+
+To run the camera+joint_positions script, run:
+```
+/home/<user>/isaacsim/python.sh ~/Desktop/get_observation.py
+```
+
 (curobo new terminal setup:
 
 Go into /home/curobo/ and
