@@ -3,6 +3,8 @@ Documentation for the setup of the UFACTORY xArm5 robotic arm (or any other robo
 
 _To import the xarm5 into Isaac, see https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/xacro_to_urdf.sh_
 
+**Or**, you can just download the USD file of the XARM5 here: https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/xarm5_added_gripper.usd 
+
 # Gamepad Control of xArm5 
 See https://github.com/sond8807-rgb/xarm5-isaacsim/blob/main/gamepad_vel_control.md for instructions.
 
